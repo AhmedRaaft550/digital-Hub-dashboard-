@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Home() {
   return (
     <main className="h-screen flex flex-col justify-center items-center bg-gray-50 p-4">
@@ -24,12 +22,6 @@ export default function Home() {
           </li>
         </ul>
       </div>
-      <Link
-        href="/login"
-        className="inline-block mt-6 px-6 py-3 bg-amber-900 text-white font-semibold rounded-lg shadow-md hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 transition-colors duration-200"
-      >
-        Login
-      </Link>
     </main>
   );
 }
