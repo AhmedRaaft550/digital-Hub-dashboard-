@@ -33,9 +33,21 @@ High-performance, enterprise-grade dashboard built with Next.js 16.1.1. Provides
 - Project Manager: Dashboard only
 - Developer: Chart only
 
+### Test Credentials (RBAC)
+
+for a quick testing Please visit login route and You may use the following credentials to test the different access levels and Role-Based Access Control :
+
+| Role                | Email             | Password    | Access Level                     |
+| :------------------ | :---------------- | :---------- | :------------------------------- |
+| **Admin**           | `ahmed@admin.com` | `Admin@123` | Full Access (Dashboard + Charts) |
+| **Project Manager** | `mohamed@pm.com`  | `Pm@12345`  | Dashboard Only                   |
+| **Developer**       | `hany@dev.com`    | `Dev@12345` | Visualizations (Charts) Only     |
+
+---
+
 ## Professional Data Table
 
-- Inline editing of row fields
+- Inline editing of project name row only
 - Dynamic filtering by status (In Progress, Completed, On Hold)
 - Advanced sorting (budget)
 - Zero-latency search: server-seeded data + client filters
