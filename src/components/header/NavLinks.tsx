@@ -1,30 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import clsx from "clsx";
 
 interface NavLinkProps {
   href: string;
   children: React.ReactNode;
+  onClick?: () => void;
 }
 
-const NavLink = ({ href, children }: NavLinkProps) => {
-  const pathname = usePathname();
-  const isActive = pathname === href || pathname.startsWith(href + "/");
-
+const NavLinks = ({ href, children, onClick }: NavLinkProps) => {
   return (
     <Link
       href={href}
-      aria-current={isActive ? "page" : undefined}
-      className={clsx(
-        "mr-4 transition-colors",
-        isActive ? "text-white font-bold " : "text-gray-50 hover:text-gray-200"
-      )}
+      className="text-gray-200 hover:text-white"
+      onClick={onClick}
     >
       {children}
     </Link>
   );
 };
 
-export default NavLink;
+export default NavLinks;
