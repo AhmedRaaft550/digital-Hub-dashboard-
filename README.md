@@ -91,7 +91,7 @@ Clone and install
 
 ```bash
 git clone https://github.com/AhmedRaaft550/Digital-Hub.git
-cd digital-hub
+cd digital-Hub-dashboard-
 npm install
 # or
 # pnpm install
